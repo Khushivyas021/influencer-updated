@@ -1,0 +1,2949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .main {
+            width: 100%;
+            height: 65px;
+            background-color: #091238;
+        }
+
+        .logo-img-contain {
+            padding: 10px;
+            margin-left: 150px;
+        }
+
+        .menubar {
+            display: flex;
+            margin-left: 89px;
+        }
+
+        .menubar li {
+            color: aliceblue;
+            padding: 15px;
+            list-style: none;
+            font-weight: 500;
+
+        }
+
+        .submenu {
+            position: absolute;
+            top: 26px;
+            max-width: 90%;
+        }
+
+        .submenu li:hover {
+            background-color: rgb(165, 6, 33);
+            color: white;
+
+        }
+
+
+        .services-container {
+            height: 380px;
+            position: absolute;
+            left: 90px;
+            width: 90%;
+            background-color: #f9f9f9d5;
+            z-index: 99;
+            top: 26px;
+
+        }
+
+        .work-con {
+            position: absolute;
+            width: 32%;
+            height: 100px;
+
+            left: 486px;
+            display: none;
+
+        }
+
+        .ser-con {
+            position: absolute;
+            width: 80%;
+            height: 400px;
+            right: 126px;
+            display: none;
+        }
+
+
+        .submenu li {
+            background-color: #f9f9f9d5;
+            border: 1px solid wheat;
+            color: #091238dd;
+
+        }
+
+        .menubar-contain:hover .work-con {
+            display: block;
+        }
+
+        .youtube {
+            display: flex;
+            color: hsl(344, 95%, 46%);
+            padding: 10px;
+        }
+
+        .youtube i {
+            font-size: 20px;
+            padding-right: 10px;
+            padding-top: 4px;
+        }
+
+        .insta {
+            display: flex;
+            color: hsl(344, 95%, 46%);
+            padding: 10px;
+        }
+
+        .insta i {
+            font-size: 20px;
+            padding-right: 10px;
+            padding-top: 4px;
+
+        }
+
+        .text-contain p {
+            color: #091238;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 7px;
+        }
+
+        .text-contain p:hover {
+            background-color: rgb(165, 6, 33);
+            color: white;
+        }
+
+        .menubar-contain:hover .ser-con {
+            display: block;
+        }
+
+        .countries-con {
+            position: absolute;
+            width: 54%;
+            right: 129px;
+            display: none;
+
+        }
+
+        .countries-container {
+            padding: 0px 50px;
+            background-color: rgba(188, 172, 172, 0.449);
+            width: 90%;
+            position: absolute;
+            top: 25px;
+            height: 350px;
+            left: 20px;
+        }
+
+        .coun-icon {
+            display: flex;
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+
+        .coun-icon i {
+            color: red;
+            padding-right: 8px;
+            padding-top: 5px;
+        }
+
+        .coun-icon p {
+            color: red;
+
+        }
+
+        .coun-india-flag img {
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+
+        .india-flag {
+            display: flex;
+            padding: 10px;
+            color: red;
+            margin-top: 20px;
+
+        }
+
+        .text {
+            margin-top: 20px;
+            color: #091238;
+
+        }
+
+        .text p {
+            padding-left: 10px;
+        }
+
+        .coun-details {
+            border-left: 1px solid rgba(117, 110, 110, 0.373);
+            position: absolute;
+            top: 28px;
+            height: 290px;
+        }
+
+        .all-countries {
+            padding-left: 30px;
+            display: flex;
+        }
+
+        .all-countries img {
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+        }
+
+        .all-countries p {
+            color: #091238;
+            padding-left: 10px;
+            font-size: 18px;
+
+        }
+
+        .menubar-contain:hover .countries-con {
+            display: block;
+        }
+
+        .text p:hover {
+            background-color: rgb(165, 6, 33);
+            color: white;
+        }
+
+        .contact-container {
+            position: absolute;
+            width: 44%;
+            height: 400px;
+            right: 16px;
+            display: none;
+        }
+
+        .contact-menu {
+            position: absolute;
+            top: 26px;
+            width: 50%;
+
+        }
+
+        .contact-menu li {
+            background-color: rgba(143, 137, 137, 0.672);
+            border: 1px solid wheat;
+            color: #091238ad;
+
+        }
+
+        .contact-menu li:hover {
+            background-color: rgb(165, 6, 33);
+            color: white;
+
+        }
+
+        .menubar-contain:hover .contact-container {
+            display: block;
+        }
+
+        .contactus-container li {
+            background-color: red;
+            margin-left: 50px;
+            margin-top: 7px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 9px 30px;
+        }
+
+        .contactus-container li a {
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .contactus-container li:hover {
+            background-color: rgb(73, 73, 164);
+        }
+
+        /* new-home-banner-start */
+
+        .home-banner-main {
+            width: 100%;
+            background-color: #091238;
+            padding-bottom: 40px;
+        }
+
+        .home-text-content {
+            position: relative;
+            left: 60px;
+            top: 194px;
+            width: 652px;
+        }
+
+        .home-text-content h1 {
+            font-weight: 800;
+            color: white;
+            font-size: 50px;
+        }
+
+        .home-text-content span {
+            font-weight: 800;
+            color: yellow;
+        }
+
+        .home-text-content-para {
+            width: 684px;
+            font-size: 17px;
+            font-weight: 600;
+
+        }
+
+        .home-text-content-para p {
+            color: white;
+            padding: 20px 0px;
+            line-height: 28px;
+        }
+
+        .home-video-content video {
+            width: 100%;
+        }
+
+        .banner-contactus-container {
+            padding: 16px 39px;
+            display: inline;
+            background-color: rgb(125 12 207);
+            border-radius: 12px;
+        }
+
+        .banner-contactus-container a {
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+        }
+
+        .banner-contactus-container:hover {
+            background-color: rgb(165, 6, 33);
+
+        }
+
+        /* new-home-banner-end */
+
+        /* swiper-start */
+
+
+        .swiper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #0a2cc1f1;
+            align-items: center;
+        }
+
+        .swiper-photos-idea {
+            width: 92%;
+            height: 80px;
+        }
+
+
+        .swiper-photos-idea img {
+            width: 220px;
+            height: 70px;
+        }
+
+
+        /* swiper-end */
+
+        /* influ-key-facts-start */
+
+        .influ-key-facts {
+            width: 100%;
+            background-color: #e6eff292;
+            padding-bottom: 30px;
+        }
+
+        .key-facts-header {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .key-facts-header p {
+            color: #091238;
+            margin-top: 85px;
+            font-size: 44px;
+
+        }
+
+        .key-facts-header span {
+            color: rgb(152, 13, 13);
+            font-weight: 700;
+        }
+
+        .key-fact-boxicon-main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .key-fact-boxicon {
+            width: 100%;
+            height: 470px;
+            background-color: white;
+            border-radius: 12px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 6px 0px rgb(192, 190, 190);
+
+        }
+
+
+        .fact-box h2 {
+            text-align: left;
+            margin-top: 40px;
+            color: rgb(88, 2, 187);
+            padding: 0px 30px;
+            font-size: 55px;
+            font-weight: 700;
+        }
+
+        .fact-box p {
+            text-align: left;
+            padding: 0px 30px;
+            margin-top: 30px;
+            font-size: 17px;
+            color: #091238;
+            padding-bottom: 30px;
+        }
+
+        .fact-boxs h2 {
+            text-align: left;
+            margin-top: 40px;
+            padding: 0px 30px;
+            color: rgb(88, 2, 187);
+
+            font-size: 55px;
+            font-weight: 700;
+        }
+
+        .fact-boxs p {
+            font-size: 16px;
+            padding: 0px 30px;
+            margin-top: 30px;
+            text-align: left;
+            color: #091238;
+            padding-bottom: 30px;
+
+        }
+
+        .fact-icon {
+            height: 230px;
+        }
+
+        .fact-icon-first {
+            background-image: url("imgs/home-icons.webp");
+            width: 48%;
+            height: 130px;
+        }
+
+        .fact-icon-first-imgsize {
+            background-position: -161px -12px;
+        }
+
+        .fact-icon-sec-imgsize {
+            background-position: -296px -12px;
+        }
+
+        .fact-icon-third-imgsize {
+            background-position: -420px -12px;
+        }
+
+        .fact-icon-forth {
+            background-image: url("imgs/home-icons.webp");
+            width: 135px;
+            height: 130px;
+            background-size: 5250px;
+
+        }
+
+        .fact-icon-forth-imgsize {
+            background-position: -11% 31%;
+        }
+
+        .fact-text-content {
+            padding: 0px 8px;
+        }
+
+        .fact-text-content-p {
+            padding: 0px 34px;
+        }
+
+
+
+        /* influ-key-facts-end */
+
+        /* influ-faq-start */
+
+        .influ-faq-main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 80px;
+        }
+
+        .influ-faq-tab {
+            width: 88%;
+            margin-top: 40px;
+            padding: 0px 20px;
+        }
+
+        .influ-faq-tab h2 {
+            color: #091238;
+            font-size: 39px;
+        }
+
+        .influ-faq-tab span {
+            color: rgb(197, 3, 3);
+            font-weight: 700;
+
+        }
+
+        .influ-faq-tab p {
+            color: #091238;
+            margin-top: 30px;
+
+        }
+
+        .faq-main-start {
+            height: 450px;
+            margin-top: 26px;
+        }
+
+        .faq-main-start h3 {
+            font-weight: 700;
+            color: #091238;
+            padding-top: 100px;
+            padding-bottom: 40px;
+
+        }
+
+        .faqs-h4 {
+            width: 90%;
+            box-shadow: 0px 0px 2px 0px;
+            background-color: hsla(240, 12%, 95%, 0.83);
+            border-radius: 10px;
+            padding: 9px;
+        }
+
+        .faqs-h4 span {
+            font-size: 33px;
+            color: #091238;
+        }
+
+        .faqs-para-show {
+            display: none;
+            padding: 20px;
+        }
+
+        .faqs-h4-temp {
+            background-color: rgba(216, 160, 179, 0.598);
+            height: 70px;
+        }
+
+        /* influ-faq-end */
+        /* influ-casestudies-start */
+
+        .influ-case-studies-main {
+            width: 100%;
+            background-color: #f3f7fb;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 80px;
+        }
+
+        .influ-case-studies {
+            width: 94%;
+            margin-top: 50px;
+        }
+
+        .cs-text {
+            width: 91%;
+            color: rgb(2, 2, 50);
+
+        }
+
+        .cs-text p {
+            font-size: 40px;
+        }
+
+        .cs-btn {
+            background: linear-gradient(#f3f7fb, #f3f7fb) padding-box, linear-gradient(90deg, #495cdf 0%, #ff0000 100%) border-box;
+            color: #313149;
+            padding: 9px 20px;
+            border: 2px solid #fff0;
+            border-radius: 6px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            float: right;
+            margin-right: 50px;
+            margin-top: 27px;
+        }
+
+        .cs-btn:hover {
+            background: linear-gradient(90deg, #495cdf 0%, #ff0000 100%) padding-box, linear-gradient(90deg, #495cdf 0%, #ff0000 100%) border-box;
+            border-color: #fff0;
+            border-image: linear-gradient(90deg, #495cdf 0%, #ff0000) 1;
+            box-shadow: 0 0 10px rgb(73 92 223 / .5);
+            color: #fff;
+
+        }
+
+        .cs-text span {
+            color: rgb(2, 2, 50);
+            font-weight: 800;
+        }
+
+        .card-com-variation-one {
+            height: 590px;
+            background-color: white;
+            border-radius: 11px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+
+        .box {
+            padding-top: 80px;
+        }
+
+        .card-com-variation-img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-com-variation-img img {
+            width: 394px;
+            height: 340px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .case-study-content p {
+            padding: 15px;
+            font-weight: 700;
+            font-size: 26px;
+            color: #091238;
+        }
+
+        .card-com-variation-button {
+            color: #ea0357;
+            padding: 0px 15px;
+            font-weight: 700;
+        }
+
+
+        /* influ-casestudies-end */
+
+        /* influ-services-start */
+
+        .influ-services-main-start {
+            width: 100%;
+            background-color: #f3f7fb;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .influ-services-main {
+            width: 90%;
+            height: 300px;
+
+        }
+
+        .influ-services-text {
+            padding: 13px;
+        }
+
+        .influ-services-main h3 {
+            font-size: 39px;
+            font-weight: 400;
+            display: inline;
+            padding-left: 10px;
+        }
+
+        .influ-services-main span {
+            color: #ea0357;
+            font-weight: 800;
+            font-size: 39px;
+            display: inline;
+
+        }
+
+        .services-para {
+            padding: 15px;
+        }
+
+        .services-para p {
+            color: #091238;
+            font-size: 17px;
+
+        }
+
+        .full-card-video {
+            padding-bottom: 30px;
+            background-color: #f3f7fb;
+        }
+
+        .full-card-video-d-flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        .full-card-video-main {
+            width: 90%;
+            height: 460px;
+            border-radius: 22px;
+            background-color: #1e021e;
+        }
+
+        .full-card-video-text {
+            border: 3px solid white;
+            padding: 10px;
+            border-radius: 39px;
+            width: 78%;
+            margin-top: 46px;
+        }
+
+        .full-card-video-text span i {
+            color: red;
+            font-size: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .full-card-video-text p {
+            display: inline;
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .full-card-video-para {
+            color: white;
+            font-size: 13px !important;
+            font-weight: 400 !important;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .full-card-video-box {
+            width: 250px;
+            height: 50px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 20px;
+            color: crimson;
+
+        }
+
+        .full-card-video-box:hover {
+            background-color: #ea0357;
+            color: #f3f7fb;
+        }
+
+        .full-card-video-box p {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+
+        .full-card-video-links {
+            margin-top: 20px;
+        }
+
+        .full-card-video-link ul li {
+            color: white;
+            line-height: 2rem;
+
+        }
+
+        .full-card-video-img img {
+            height: 400px;
+            width: 480px;
+            margin-left: 40px;
+        }
+
+
+        .instagram-bg {
+            width: 90%;
+            height: 414px;
+            border-radius: 22px;
+            background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+
+        }
+
+        .linkdin-bg-main {
+            width: 90%;
+            height: 460px;
+            border-radius: 22px;
+            background-color: #0d5bbb;
+        }
+
+        .meme-marketing-bg {
+            width: 90%;
+            height: 460px;
+            border-radius: 22px;
+            background-color: #feba07;
+
+        }
+
+        .instagram-bg-text {
+            border: 3px solid white;
+            padding: 10px;
+            border-radius: 39px;
+            width: 78%;
+            margin-top: 46px;
+
+        }
+
+        .instagram-bg-text span i {
+            color: white;
+            font-size: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .instagram-bg-text p {
+            display: inline;
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .instagram-bg-video-box {
+            width: 250px;
+            height: 50px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 20px;
+            color: rgb(109, 4, 106);
+
+        }
+
+        .instagram-bg-video-box:hover {
+            background-color: #ea0357;
+            color: #f3f7fb;
+        }
+
+        .instagram-bg-video-box p {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+
+
+        .linkdin-bg-text {
+            border: 3px solid white;
+            padding: 10px;
+            border-radius: 39px;
+            width: 78%;
+            margin-top: 46px;
+
+        }
+
+        .linkdin-bg-text span i {
+            color: white;
+            font-size: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .linkdin-bg-text p {
+            display: inline;
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .linkdin-bg-video-box {
+            width: 250px;
+            height: 50px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 20px;
+            color: rgb(5, 5, 132);
+        }
+
+        .linkdin-bg-video-box:hover {
+            background-color: #ea0357;
+            color: #f3f7fb;
+        }
+
+        .linkdin-bg-video-box p {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .full-card-video-text span {
+            display: inline-block;
+        }
+
+        .meme-home-icon-size {
+            background-image: url(imgs/home-icons.webp);
+
+        }
+
+        .meme-home-icon {
+            width: 79px;
+            height: 48px;
+            background-position: -2404px -327px;
+        }
+
+        .influ-talk-card {
+            background: linear-gradient(#f3f7fb, #f3f7fb) padding-box, linear-gradient(90deg, #495cdf 0%, #ff0000 100%) border-box;
+            border: 2px solid #fff0;
+            padding: 9px 20px;
+            border-radius: 9px;
+
+        }
+
+        .influ-talk-card h3 {
+            text-align: center;
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .influ-talk-card:hover {
+            background: linear-gradient(90deg, #495cdf 0%, #ff0000 100%) padding-box, linear-gradient(90deg, #495cdf 0%, #ff0000 100%) border-box;
+            border-color: #fff0;
+            border-image: linear-gradient(90deg, #495cdf 0%, #ff0000) 1;
+            box-shadow: 0 0 10px rgb(73 92 223 / .5);
+            color: #fff;
+        }
+
+        .influ-experts-card {
+            background-color: #091238;
+            width: 100%;
+            border-radius: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        .influ-experts-card-start {
+            width: 87%;
+            position: relative;
+            padding-bottom: 40px;
+
+        }
+
+        .influ-experts-card-start p {
+            color: white;
+            font-size: 45px;
+            display: inline;
+        }
+
+
+
+
+        .influ-experts-card-start p::after {
+            content: 'Contact Us';
+            position: absolute;
+            right: 20px;
+            background: linear-gradient(#091238, #091238) padding-box, linear-gradient(90deg, #495cdf 0%, #ff0000 100%) border-box;
+            color: white;
+            padding: 11px 22px;
+            border: 2px solid #fff0;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 800;
+            margin-top: 15px;
+        }
+
+        .influ-experts-card-start p:hover::after {
+            background: linear-gradient(90deg, #495cdf 0%, #ff0000 100%) padding-box, linear-gradient(90deg, #495cdf 0%, #ff0000 100%) border-box;
+            border-color: #fff0;
+            border-image: linear-gradient(90deg, #495cdf 0%, #ff0000) 1;
+            box-shadow: 0 0 10px rgb(73 92 223 / .5);
+            color: #fff;
+        }
+
+        .influ-expert-cardbox {
+            margin-top: 40px;
+        }
+
+        .influ-expert-cardbox-start {
+            height: 350px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+
+        .influ-expert-cardbox-start img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .influ-expert-cardbox-start h3 {
+            padding: 0px 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .influ-expert-cardbox-start span {
+            color: white;
+            width: 93%;
+            display: inline-block;
+            padding: 10px 40px 30px 20px;
+        }
+
+        .influ-expert-cardbox-start:hover {
+            background-color: #313149fa;
+        }
+
+        .influ-content-creator {
+            width: 86%;
+        }
+
+        .influ-content-creator h3 {
+            color: #091238;
+            font-size: 40px;
+            font-weight: 700;
+            padding-top: 60px;
+        }
+
+        .influ-content-creator-text {
+            padding-top: 50px;
+        }
+
+        .influ-content-creator-text p {
+            color: #091238;
+            font-weight: 700;
+            font-size: 20px;
+            display: inline;
+
+
+        }
+
+        .influ-content-creator-text span {
+            color: #ea0357;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 30px;
+        }
+
+        .influ-content-creator marquee {
+            padding-top: 50px;
+        }
+
+        .full-width-faqs {
+            width: 88%;
+
+        }
+
+        .full-width-faqs h4 {
+            font-size: 38px;
+            font-weight: 400;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+
+        .full-width-faqs span {
+            color: #ea0357;
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .full-width-faqs-start {
+            background-color: hsl(0, 2%, 83%);
+            border: 1px solid #3f3b3b40;
+            border-radius: 13px;
+            padding: 10px;
+            padding-left: 20px;
+            margin-top: 6px;
+        }
+
+        .full-width-faqs-start a {
+            font-size: 33px;
+            color: #091238 !important;
+            text-decoration: none;
+        }
+
+        .full-width-faqs-para p {
+            display: none;
+
+        }
+
+        .full-width-faqs-para img {
+            display: none;
+        }
+
+        .fw-faq-paragraph {
+            padding: 79px 51px;
+
+        }
+
+        .full-width-faqs-main {
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+
+
+        /* influ-services-end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .feature-background-variation {
+            width: 100%;
+            background-color: #020235;
+            padding-bottom: 40px;
+        }
+
+        .feature-tab-content {
+            padding-top: 50px;
+        }
+
+        .feature-tab-content h1 {
+            color: white;
+        }
+
+        .feature-tab-wrapper {
+            width: 96%;
+            background-color: rgba(255, 255, 255, 0.23);
+            border: 3px solid #ffffff94;
+            border-radius: 10px;
+            margin-top: 40px;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .feature-tab-wrapper-content {
+            padding-top: 30px;
+        }
+
+        .feature-tab-wrapper-content h2 {
+            margin-left: 30px;
+            font-weight: 500;
+            display: inline;
+        }
+
+        .feature-tab-wrapper-content p {
+            margin-top: 33px;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .feature-img-contain {
+            position: relative;
+        }
+
+        .feature-img-contain img {
+            width: 200px;
+            position: absolute;
+            top: -34px;
+            left: 140px;
+            height: 170px;
+
+        }
+
+        .custom-card-with-icon-h3 {
+            width: 90%;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .custom-card-with-icon-h3 h3 {
+            font-size: 43px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .custom-card-with-icon-h3 strong {
+            color: #ea0357;
+            font-weight: 700;
+        }
+
+
+        .custom-card-with-iconbox {
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            background-color: #f3f7fb;
+            height: 185px;
+        }
+
+
+        .custom-card-with-iconbox:hover {
+            background-color: hsla(240, 94%, 38%, 0.858);
+            color: white;
+            font-weight: 600;
+        }
+
+        .custom-card-image {
+            display: inline;
+            padding-top: 30px;
+            padding-left: 9px;
+        }
+
+        .custom-card-text {
+            padding: 27px;
+        }
+
+        .custom-card-text h4 {
+            font-weight: 700;
+            color: #020235;
+        }
+
+        .custom-card-text p {
+            padding-top: 10px;
+
+        }
+
+        .custom-card-with-iconbox:hover h4 {
+            color: white;
+            font-weight: 500;
+        }
+
+        .custom-card-box {
+            margin-top: 10px;
+        }
+
+        .influ-card-tab-var {
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top: 40px;
+        }
+
+        .influ-card-tab-var-col {
+            height: 220px;
+            background-color: white;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            border-radius: 12px;
+            padding: 19px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .influ-card-tab-var-col p {
+            padding-top: 30px;
+            color: #020235;
+        }
+
+        .influ-card-tab-var-img {
+            background-image: url(imgs/home-icons.webp);
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .bg-purple {
+            background-color: rgba(227, 219, 219, 0.655);
+
+        }
+
+        .influ-card-tab-var-size {
+            background-position: 547px -168px;
+        }
+
+
+        .bg-pink {
+            background-color: rgba(246, 117, 207, 0.225);
+
+        }
+
+        .bg-green {
+            background-color: rgba(129, 243, 251, 0.225);
+
+        }
+
+
+        .influ-card-tab-Beauty-size {
+            background-position: 469px -174px;
+
+        }
+
+
+
+        .influ-card-tab-Beauty-size {
+            background-position: 469px -174px;
+
+        }
+
+
+
+        .influ-card-tab-Finance-size {
+            background-position: 1111px -305px;
+
+        }
+
+
+        .influ-card-tab-Food-size {
+            background-position: 298px -174px;
+        }
+
+
+
+        .influ-card-tab-Gaming-size {
+            background-position: 732px -174px;
+
+        }
+
+
+
+        .influ-card-tab-FitnessHealth-size {
+            background-position: 391px -174px;
+
+        }
+
+
+
+        .influ-card-tab-Comedy-size {
+            background-position: -13px -293px;
+        }
+
+
+        .influ-card-tab-Travel-size {
+            background-position: 213px -174px;
+        }
+
+
+
+        .influ-card-tab-Entertainment-size {
+            background-position: 117px -174px;
+        }
+
+
+
+        .influ-card-tab-Technology-size {
+            background-position: 642px -171px;
+
+        }
+
+
+
+        .influ-card-tab-Education-size {
+            background-position: -191px -297px;
+        }
+
+
+
+        .influ-card-tab-Automobile-size {
+            background-position: -366px -297px;
+        }
+
+        .banner-influencers-container {
+            padding: 16px 45px;
+            display: inline;
+            background-color: rgb(22, 12, 207);
+            border-radius: 12px;
+        }
+
+        .banner-influencers-container a {
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+        }
+
+        .banner-influencers-container:hover {
+            background-color: rgb(165, 6, 33);
+        }
+
+        .influ-experts-card-main {
+            background: linear-gradient(219.78deg, #8b15c2 18.37%, #4643db 95.14%);
+            width: 100%;
+            border-radius: 50px;
+            padding-top: 30px;
+            height: 400px;
+            padding-bottom: 30px;
+
+        }
+
+        .influ-trophy {
+            width: 90%;
+            height: 300px;
+        }
+
+        .influ-trophy-img {
+            background-image: url(imgs/home-icons.webp);
+            width: 50%;
+            float: right;
+            height: 306px;
+            margin-right: 104px;
+        }
+
+        .influ-trophy-img-size {
+            background-position: -1082px -297px;
+        }
+
+        .influ-trophy-image {
+            background-image: url(imgs/home-icons.webp);
+            width: 47%;
+            height: 76px;
+            margin-top: 40px;
+        }
+
+        .influ-trophy-image-size {
+            background-position: -1435px -320px;
+        }
+
+        .influ-trophy-para {
+            width: 89%;
+            height: 203px;
+            font-size: 26px;
+            color: white;
+            padding-top: 35px;
+        }
+
+        .influ-slider-imgs h3 {
+            margin-bottom: 60px;
+            color: #020235;
+            margin-left: 40px;
+            font-size: 40px;
+            font-weight: 800;
+
+        }
+
+        .influ-slider-imgs img {
+            margin-bottom: 50px;
+        }
+
+        .influ-contactus-form-main {
+            width: 80%;
+            height: 660px;
+            background-color: white;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            border-radius: 10px;
+        }
+
+        .influ-contactus-form {
+            margin-top: 40px;
+        }
+
+
+        .influ-contactus h3 {
+            width: 77%;
+            padding: 0px 30px;
+            font-size: 40px;
+            font-weight: 400;
+            color: #020235;
+
+        }
+
+        .influ-contactus strong {
+            padding: 10px 30px;
+            font-size: 39px;
+            color: #020235;
+            font-weight: 700;
+        }
+
+        .influ-contactus p {
+            padding: 10px 30px;
+            width: 464px;
+            font-size: 14px;
+            color: #020235;
+
+        }
+
+        .influ-contact {
+            width: 90%;
+            height: 600px;
+            background-color: #020235;
+            border-radius: 13px;
+            padding: 30px;
+        }
+
+        .influ-contact h3 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .influ-contact input {
+            padding: 10px;
+            border-radius: 7px;
+            margin-top: 8px;
+        }
+
+        .influ-contact input::placeholder {
+            color: #020235;
+        }
+
+        .influ-contact textarea {
+            margin-top: 9px;
+            width: 93%;
+            border-radius: 7px;
+            height: 90px;
+            padding: 10px;
+        }
+
+        .cheack-box-text {
+            width: 60%;
+            height: 60px;
+            border-radius: 7px;
+            background-color: #9a9696;
+            margin-top: 40px;
+            display: flex;
+        }
+
+        .cheack-box-text input {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="logo-img-contain">
+                                <img src="imgs/grynow-logo-white.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <ul class="menubar">
+                                <li class="menubar-contain">our work
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="work-con">
+                                        <ul class="submenu">
+                                            <li>Influencer Marketing Campaigns in India</li>
+                                            <li>Influencer Marketing Campaigns in Middle East</li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="menubar-contain">services
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="ser-con">
+                                        <div class="services-container">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="container">
+                                                            <div class="youtube">
+                                                                <i class="fa-brands fa-youtube"></i>
+                                                                <p>You Tube</p>
+                                                            </div>
+                                                            <div class=" text-contain">
+                                                                <p>Hire YouTubers</p>
+                                                                <p>YouTubers Video Production</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="container">
+                                                            <div class="insta">
+                                                                <i class="fa-brands fa-instagram"></i>
+                                                                <p>Instagram</p>
+                                                            </div>
+                                                            <div class=" text-contain">
+                                                                <p>Hire Instagrammers</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="youtube">
+                                                            <i class="fa-solid fa-user-group"></i>
+                                                            <p>Hire Influencers</p>
+                                                        </div>
+                                                        <div class=" text-contain">
+                                                            <p>Hire Micro Instagrammers</p>
+                                                            <p>Hire Nano Instagrammers</p>
+                                                            <p>Hire Regional Instagrammers</p>
+                                                            <p>Hire Celebrity Instagrammers</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="youtube">
+                                                            <i class="fa-solid fa-list"></i>
+                                                            <p>Others</p>
+                                                        </div>
+                                                        <div class=" text-contain">
+                                                            <p>User-Generated Video</p>
+                                                            <p>Meme marketing</p>
+                                                            <p>Linkdin Influencer Marketing</p>
+                                                            <p>Video Production</p>
+                                                            <p>Twitch Influencer Marketing</p>
+                                                            <p>Tik Tok</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menubar-contain">Countries
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="countries-con">
+                                        <div class="countries-container">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="india-flag">
+                                                            <div class="coun-india-flag">
+                                                                <img src="imgs/india-flag-main.jpg" alt="">
+                                                                India
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="text">
+                                                                    <p>New Delhi</p>
+                                                                    <p>Noida</p>
+                                                                    <p>Banglore</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="text">
+                                                                    <p>GuruGram</p>
+                                                                    <p>Mumbai</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="coun-details"></div>
+                                                        <div class="coun-icon">
+                                                            <i class="fa-solid fa-globe"></i>
+                                                            <p>Other</p>
+                                                        </div>
+                                                        <div class="all-countries">
+                                                            <img src="imgs/us.webp" alt="">
+                                                            <p>USA</p>
+                                                        </div>
+                                                        <div class="all-countries">
+                                                            <img src="imgs/philippines.jpg" alt="">
+                                                            <p>Philippine</p>
+                                                        </div>
+                                                        <div class="all-countries">
+                                                            <img src="imgs/uae.png" alt="">
+                                                            <p>UAE(Influencer Marketing)</p>
+                                                        </div>
+                                                        <div class="all-countries">
+                                                            <img src="imgs/uae.png" alt="">
+                                                            <p>USA(UGC)</p>
+                                                        </div>
+                                                        <div class="all-countries">
+                                                            <img src="imgs/indonesia.jpg" alt="">
+                                                            <p>Indonesia</p>
+                                                        </div>
+                                                        <div class="all-countries">
+                                                            <img src="imgs/uk.png" alt="">
+                                                            <p>UK</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menubar-contain">About
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <div class="contact-container">
+                                        <div class="contact-con">
+                                            <ul class="contact-menu">
+                                                <li>About us</li>
+                                                <li>Blogs</li>
+                                                <li> Our Clients </li>
+                                                <li>Case Studies</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="contactus-container">
+                                    <ul>
+                                        <li><a href="">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="home-banner-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="home-text-content">
+                            <h1>Best
+                                <span>Influencer Marketing</span>
+                                Agency in India
+                            </h1>
+                            <div class="home-text-content-para">
+                                <p>Grynow is the best Influencer marketing agency in India which provides the top
+                                    influencer
+                                    marketing platform to help brands / visionary marketers leverage social media
+                                    influencers’ content in marketing and advertising their products/services. </p>
+                            </div>
+                            <div class="banner-contactus-container">
+                                <a href="">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 offset-1">
+                        <div class="home-video-content">
+                            <video src="imgs/banner-video.mp4" autoplay="" muted="" loop=""></video>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="swiper">
+            <div class="swiper-photos-idea">
+                <marquee>
+                    <img src="imgs/brand-logos/akshayakalpa.webp" alt="">
+                    <img src="imgs/brand-logos/amazon-logo.webp" alt="">
+                    <img src="imgs/brand-logos/baidyanath.webp" alt="">
+                    <img src="imgs/brand-logos/carnival-park.webp" alt="">
+                    <img src="imgs/brand-logos/casio.webp" alt="">
+                    <img src="imgs/brand-logos/chinese-wok.webp" alt="">
+                    <img src="imgs/brand-logos/fb.webp" alt="">
+                    <img src="imgs/brand-logos/gnc.webp" alt="">
+                    <img src="imgs/brand-logos/google-india.webp" alt="">
+                    <img src="imgs/brand-logos/grab.webp" alt="">
+                    <img src="imgs/brand-logos/groww.webp" alt="">
+                    <img src="imgs/brand-logos/indrive.webp" alt="">
+                    <img src="imgs/brand-logos/innovista.webp" alt="">
+                    <img src="imgs/brand-logos/kapiva.webp" alt="">
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="influ-key-facts">
+            <div class="key-facts-header">
+                <p>Largest
+                    <span>Influencer Marketing</span>
+                    Platform in India
+                </p>
+            </div>
+            <div class="container">
+
+                <div class="key-fact-boxicon-main">
+                    <div class="key-fact-boxicon">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="fact-box">
+                                        <h2>3500+</h2>
+                                        <p>Personalized Influencer
+                                            Campaigns Executed</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="fact-boxs">
+                                        <h2>1500+</h2>
+                                        <p>Top-Notch Brands Trust Us For Their Influencer Marketing</p>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="fact-box">
+                                        <h2>300M+</h2>
+                                        <p>Global Influencers & Content Creators</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="fact-box">
+                                        <h2>8+</h2>
+                                        <p>Years Experience in Executing Customized Campaigns</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="fact-icon">
+                                        <div class=" fact-icon-first fact-icon-first-imgsize">
+
+                                        </div>
+                                        <div class="container">
+                                            <div class="fact-text-content">
+                                                <p>Awarded By Economic Times For The Best Campaign In 2022</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="fact-icon">
+                                        <div class=" fact-icon-first fact-icon-sec-imgsize"></div>
+                                        <div class="container">
+                                            <div class="fact-text-content">
+                                                <p>Executed India’s Biggest Influencer Marketing Campaign (Most Views)
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="fact-icon">
+                                        <div class=" fact-icon-first fact-icon-third-imgsize"></div>
+                                        <div class="container">
+                                            <div class="fact-text-content">
+                                                <p>
+                                                    Having presence in US, UK, Indonesia, Philippines & GCC
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="fact-icon">
+                                        <div class=" fact-icon-forth fact-icon-forth-imgsize"></div>
+                                        <div class="container">
+                                            <div class="fact-text-content-p">
+                                                <p>
+                                                    Comprehensive
+                                                    AI Dashboard
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="influ-faq-main">
+            <div class="influ-faq-tab">
+                <div class="container">
+                    <div class="row">
+                        <h2>How Our
+                            <span>
+                                Influencer Marketing
+                            </span>
+                            Company Helps Brands?
+                        </h2>
+                        <p>Leveraging the talents of professional social media influencers and content creators, our
+                            influencer
+                            marketing experts collaborate with visionary strategists to develop imaginative, distinctive
+                            content
+                            that boasts exceptional shareability and engagement.Opt for the best influencer marketing
+                            services
+                            to elevate your brand's presence!</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="faq-main-start">
+                                <h3>Our influencer marketing company devises a comprehensive strategy to:</h3>
+                                <div class="faqs">
+                                    <h4 class="faqs-h4" onclick="faqclick(this)"><span>+</span>
+                                        Build Trust
+                                    </h4>
+                                    <p class="faqs-para-show">Utilize the trusted relationship between influencers and
+                                        their
+                                        followers to
+                                        position your product superior.</p>
+                                </div>
+                                <div class="faqs">
+                                    <h4 class="faqs-h4" onclick="faqclick(this)"><span>+</span>
+                                        Attract, Engage, and Convert:
+                                    </h4>
+                                    <p class="faqs-para-show">We help businesses to attract, engage, and convert their
+                                        potential customers
+                                        by
+                                        increasing their awareness, leads, and sales through organic engagement via
+                                        creator-generated content.</p>
+                                </div>
+                                <div class="faqs">
+                                    <h4 class="faqs-h4" onclick="faqclick(this)"><span>+</span>
+                                        Influencing Buying Decision:
+                                    </h4>
+                                    <p class="faqs-para-show">
+                                        Hence, helping in inspiring their decision to buy our client’s product.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="faq-main-start">
+                                <video src="imgs/how-our-influencer-marketing-company.mp4" autoplay="" muted=""
+                                    loop=""></video>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="influ-case-studies-main">
+            <div class="influ-case-studies">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="cs-text">
+                                <p>
+                                    <span>Case Studies</span>
+
+                                    by India’s Top Influencer Marketing Agency
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="cs-btn">
+                                <h4>view all</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card-com-variation-one">
+                                    <div class="card-com-variation-img">
+                                        <img src="imgs/amazon.webp" alt="">
+                                    </div>
+                                    <div class="case-study-content">
+                                        <p>Amazon Live Commerce Case Study (100 Influencers)</p>
+                                    </div>
+                                    <div class="card-com-variation-button">
+                                        <p> See detail
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card-com-variation-one">
+                                    <div class="card-com-variation-img">
+                                        <img src="imgs/reequil.webp" alt="">
+                                    </div>
+                                    <div class="case-study-content">
+                                        <p>Re'equil's O Free Sunscreen promotion campaign</p>
+                                    </div>
+                                    <div class="card-com-variation-button">
+                                        <p> See detail
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card-com-variation-one">
+                                    <div class="card-com-variation-img">
+                                        <img src="imgs/paytm.webp" alt="">
+                                    </div>
+                                    <div class="case-study-content">
+                                        <p>Paytm campaign to drive higher app usage</p>
+                                    </div>
+                                    <div class="card-com-variation-button">
+                                        <p> See detail
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="influ-services-main-start ">
+            <div class="influ-services-main ">
+                <div class="influ-services-text">
+                    <span>Influencer Marketing Services</span>
+                    <h3>Offered By Us </h3>
+                </div>
+                <div class="services-para">
+                    <p>We are the <strong>top influencer marketing company in India </strong> that is most respected, as
+                        we offer complete
+                        360-degree influencer marketing campaign solutions through <strong>India’s top influencers
+                        </strong> on YouTube,
+                        Instagram, Snapchat, Facebook, Twitter, and LinkedIn. We utilize state-of-the-art technology &
+                        resources, and transformative, data-driven & hyper-targeted influencer marketing strategies to
+                        deliver the right communication and unparalleled value. Hire the top influencer marketing agency
+                        in India today!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="full-card-video">
+            <div class="full-card-video-d-flex">
+                <div class="full-card-video-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="container">
+                                    <div class="full-card-video-text">
+                                        <span><i class="fa-brands fa-youtube"></i></span>
+                                        <p>YouTube Influencer Marketing</p>
+
+                                    </div>
+                                    <p class="full-card-video-para">Influencer your potential customers on youtube
+                                        through
+                                        top youtuber</p>
+                                    <div class="full-card-video-box">
+                                        <div class="full-card-video-d-flex">
+                                            <p>
+                                                Hire Top Youtubers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="full-card-video-links">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="full-card-video-link">
+                                                        <ul>
+                                                            <li>unboxing video</li>
+                                                            <li>product video</li>
+                                                            <li>long & short video</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="full-card-video-link">
+                                                        <ul>
+                                                            <li>Vlogs</li>
+                                                            <li>Community posts</li>
+                                                            <li>Memes</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="full-card-video-img">
+                                    <video src="imgs/youtube-influencer-marketing.mp4" autoplay="" muted=""
+                                        loop=""></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-card-video">
+            <div class="full-card-video-d-flex">
+                <div class="instagram-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="container">
+                                    <div class="instagram-bg-text">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                        <p>Instagram Influencer Marketing</p>
+
+                                    </div>
+                                    <p class="full-card-video-para">Inspire your prospects on Instagram through top
+                                        Instagrammers in India.</p>
+                                    <div class="instagram-bg-video-box">
+                                        <div class="full-card-video-d-flex">
+                                            <p>
+                                                Hire Top Instagramers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="full-card-video-links">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="full-card-video-link">
+                                                        <ul>
+                                                            <li>Posts</li>
+                                                            <li>Stories</li>
+                                                            <li>Reels</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="full-card-video-link">
+                                                        <ul>
+                                                            <li>UGC</li>
+                                                            <li>Reviews </li>
+                                                            <li>Memes</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="full-card-video-img">
+                                    <img src="imgs/instagram-influencer-marketing.gif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-card-video">
+            <div class=" d-flex justify-content-center">
+                <div class="linkdin-bg-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="container">
+                                    <div class="linkdin-bg-text">
+                                        <span><i class="fa-brands fa-linkedin"></i></span>
+                                        <p>LinkedIn Influencer Marketing</p>
+
+                                    </div>
+                                    <p class="full-card-video-para">Influence leading professionals on Linkedin through
+                                        our services </p>
+                                    <div class="linkdin-bg-video-box">
+                                        <div class="d-flex justify-content-center">
+                                            <p>
+                                                Hire Top Instagramers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="full-card-video-links">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="full-card-video-link">
+                                                        <ul>
+                                                            <li>Brand Awareness</li>
+                                                            <li>Tvc Ampliacation</li>
+                                                            <li>Linkdin page growth</li>
+                                                            <li>Hiring Campaigns</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="full-card-video-link">
+                                                        <ul>
+                                                            <li>Sign-up Driven Launches</li>
+                                                            <li>Targeted Talent Acquisition </li>
+                                                            <li>Visibility Boost</li>
+                                                            <li>Credibility Boost</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="full-card-video-img">
+                                    <video src="imgs/linkedin-influencer-marketing.mp4" autoplay="" muted=""
+                                        loop=""></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-card-video">
+            <div class="full-card-video-d-flex">
+                <div class="meme-marketing-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="container">
+                                    <div class="full-card-video-text">
+                                        <span class="meme-home-icon meme-home-icon-size"></span>
+                                        <p>Meme Marketing</p>
+
+                                    </div>
+                                    <p class="full-card-video-para">Influencer your potential customers on youtube
+                                        through
+                                        top youtuber</p>
+                                    <div class="full-card-video-box">
+                                        <div class="full-card-video-d-flex">
+                                            <p>
+                                                Hire Meme Influencers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="full-card-video-links">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="full-card-video-link">
+                                                        <ul>
+                                                            <li>Statics</li>
+                                                            <li>product video</li>
+                                                            <li>long & short video</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="full-card-video-img">
+                                    <video src="imgs/meme-marketing.mp4" autoplay="" muted="" loop=""></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-card-video">
+            <div class="d-flex justify-content-center">
+                <div class="influ-talk-card">
+                    <h3> Talk to Influencer Marketing experts </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-card-video ">
+            <div class="influ-experts-card">
+                <div class="d-flex justify-content-center">
+                    <div class="influ-experts-card-start">
+                        <p>Our <strong>Influencer Marketing</strong> Experts</p>
+                        <div class="influ-expert-cardbox ">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="influ-expert-cardbox-start">
+                                        <img src="imgs/understanding-your-business-goals.webp" alt="">
+                                        <h3>Understand your business goals</h3>
+                                        <span>We thoroughly discuss your marketing/business goals and craft the
+                                            strategies
+                                            accordingly.</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-4">
+                                    <div class="influ-expert-cardbox-start">
+                                        <img src="imgs/connect-brands-with-influencer.webp" alt="">
+                                        <h3>Connect brands with influencers</h3>
+                                        <span>With help of our AI Dashboard, we select and connect with top influencers
+                                            across 70+ countries who have interested viewers for your brand’s
+                                            product/service and can eventually become your customers.</span>
+                                    </div>
+
+                                </div>
+                                <div class="col-4">
+                                    <div class="influ-expert-cardbox-start">
+                                        <img src="imgs/strategize-excute-inlfuencer-marketing.webp" alt="">
+                                        <h3>Strategize & Execute influencer marketing campaigns</h3>
+                                        <span>We design/strategize content and execute personalized and scalable
+                                            campaigns that resonate with your brand and engage your target audience.
+                                            Let’s connect!</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-card-video">
+            <div class="d-flex justify-content-center">
+                <div class="influ-content-creator">
+                    <h3>Influencers and Content Creators</h3>
+                    <div class="influ-content-creator-text">
+                        <span>Youtubers</span>
+                        <p>Instagrammers</p>
+                    </div>
+                    <marquee>
+                        <img src="imgs/ajay.webp" alt="">
+                        <img src="imgs/anunay-sood.webp" alt="">
+                        <img src="imgs/arun-prabhudesai.webp" alt="">
+                        <img src="imgs/ashishchanchlani.webp" alt="">
+                        <img src="imgs/gaurav-chaudhary.webp" alt="">
+                        <img src="imgs/komal-pandey.webp" alt="">
+                        <img src="imgs/kritika-khurana.webp" alt="">
+                        <img src="imgs/madhurasrecipe-marathi.webp" alt="">
+                        <img src="imgs/sharan-hedge.webp" alt="">
+                        <img src="imgs/shivesh-bhatia.webp" alt="">
+                    </marquee>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-card-video">
+            <div class="d-flex justify-content-center">
+                <div class="full-width-faqs">
+                    <h4>How We Strategize the <span>Influencer Marketing</span> Campaigns</h4>
+                    <p>We help brands unlock the potential of effective <strong> Influencer Marketing in just 3
+                            steps:-</strong></p>
+
+                    <div class="full-width-faqs-main">
+                        <div class="full-width-faqs-start">
+                            <a onclick="fullwidthfaq(this)">
+                                <strong>+</strong> 1. Selecting the Right Influencers
+                            </a>
+                            <div class="full-width-faqs-para">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="fw-faq-paragraph">Just give us a call on +919899537363 OR reach out
+                                            through our contact form, and our
+                                            influencer marketing experts will discuss your requirements within 1-2
+                                            hours.
+                                            Together,
+                                            we’ll explore your brand's goals and what exactly you want to achieve with
+                                            our
+                                            influencer
+                                            marketing services to align with your vision. Our approach involves a
+                                            careful
+                                            selection of
+                                            platforms and influencers in marketing, ensuring customized influencer
+                                            marketing
+                                            campaigns
+                                            are perfectly aligned with your goals for unparalleled engagement and better
+                                            ROI.
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="imgs/selecting-the-right-influencers.webp" alt=""
+                                            class="fw-faq-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="full-width-faqs-start">
+                            <a onclick="fullwidthfaq(this)">
+                                <strong>+</strong> 2. Crafting Engaging Campaigns
+                            </a>
+                            <div class="full-width-faqs-para">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="fw-faq-paragraph">Collaboratively, we embark on an Influencer Campaign
+                                            that not only engages but also subtly outshines your competition. Through
+                                            personalized influencer marketing strategy, we generate content that
+                                            resonates,
+                                            encouraging deeper interaction with your brand and steering your campaign
+                                            towards its objectives with precision.
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="imgs/crafting-engaging-campaigns.webp" alt="" class="fw-faq-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="full-width-faqs-start">
+                            <a onclick="fullwidthfaq(this)">
+                                <strong>+</strong>
+
+
+                                3. Achieving Brand Success
+
+                            </a>
+                            <div class="full-width-faqs-para">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="fw-faq-paragraph">Our powerful influencer marketing platform serves as
+                                            the
+                                            launchpad for stories that inspire and convert. This strategic deployment of
+                                            influencer marketing techniques boosts awareness, leads, and sales, driving
+                                            tangible results in ROI, sales, and ultimately, profit. Experience the
+                                            transformative power of collaboration with India’s top influencers.
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="imgs/achieving-brand-success.webp" alt="" class="fw-faq-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="feature-background-variation">
+            <div class="container">
+                <div class="feature-tab-content">
+                    <h1>Why Choose India's Top Influencer Marketing Agency?</h1>
+                    <div class="feature-tab-wrapper">
+                        <div class="container">
+                            <div class="feature-tab-wrapper-content">
+                                <h2>1. Grynow's AI-Driven Dashboard</h2>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="container">
+                                            <p>We've transformed influencer marketing with our advanced Al Dashboard,
+                                                tailoring it to empower your brand's unique story. Our robust influencer
+                                                marketing platform leverages a vast network of over 300 million
+                                                influencers
+                                                across various platforms, ensuring you have the perfect social media
+                                                influencers/voices to amplify your brand.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="feature-img-contain">
+                                            <img src="imgs/ai.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-tab-wrapper">
+                        <div class="container">
+                            <div class="feature-tab-wrapper-content">
+                                <h2>2. Expertise & Research Mastery:</h2>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="container">
+                                            <p>As a global influencer marketing agency, we dive deep into understanding
+                                                how
+                                                influencer marketing works, setting us apart as one of the top
+                                                influencer
+                                                marketing agencies in India. Our strategy is built on comprehensive
+                                                research
+                                                and a profound understanding of our client’s ambitions, enabling us to
+                                                pair
+                                                them with ideal influencers on platforms like YouTube and Instagrammers
+                                                for
+                                                maximum impact.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="feature-img-contain">
+                                            <img src="imgs/search.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-tab-wrapper">
+                        <div class="container">
+                            <div class="feature-tab-wrapper-content">
+                                <h2>3. Authentic Connections & Diverse Experience:</h2>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="container">
+                                            <p>With direct access to over 300M+ verified content creators, we have the
+                                                most
+                                                advanced influencer marketing AI dashboard that empower us like no
+                                                other. We
+                                                ensure authenticity by collaborating only with genuine influencers,
+                                                making
+                                                us the top influencer marketing company in India. Our extensive 8+ years
+                                                of
+                                                experience in influencer marketing in India and globally positions us
+                                                uniquely, boasting a portfolio of success stories and an innovative
+                                                approach
+                                                to digital storytelling.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="feature-img-contain">
+                                            <img src="imgs//logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-tab-wrapper">
+                        <div class="container">
+                            <div class="feature-tab-wrapper-content">
+                                <h2>4. Building Trust & Delivering Value:</h2>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="container">
+                                            <p>Trust is the cornerstone of our relationships, both with brands and
+                                                creators.
+                                                Our commitment to ethical practices and delivering substantial value
+                                                underlines our status as one of the leading influencer marketing
+                                                agencies in
+                                                India. We go beyond just connecting brands with influencers; we foster
+                                                long-term bonds that translate into lasting brand advocacy by delivering
+                                                qualitative as well as quantifiable value to our customers by maximizing
+                                                the
+                                                overall benefits and yet minimizing the effective costs for our
+                                                customers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="feature-img-contain">
+                                            <img src="imgs/right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-tab-wrapper">
+                        <div class="container">
+                            <div class="feature-tab-wrapper-content">
+                                <h2>5. Client Delight & Stakeholder Relationships:</h2>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="container">
+                                            <p>Our mission extends to delivering both quantitative and qualitative
+                                                benefits,
+                                                ensuring our clients see real results from their campaigns. This focus
+                                                on
+                                                benefits, paired with transparent and honest stakeholder relationships,
+                                                enhances our reputation, encouraging high rates of client retention and
+                                                satisfaction.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="feature-img-contain">
+                                            <img src="imgs/group.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-tab-wrapper">
+                        <div class="container">
+                            <div class="feature-tab-wrapper-content">
+                                <h2>6. Enduring Partnerships & Client Advocacy:</h2>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="container">
+                                            <p>The strength of our relationships and the consistent quality of our work
+                                                encourage our clients to regard us as more than a service provider; they
+                                                see
+                                                us as essential partners in their marketing strategy. This has cemented
+                                                our
+                                                position as the top influencer marketing agency in India, trusted by
+                                                over
+                                                100 diverse brands for their influencer marketing needs. Join forces
+                                                with
+                                                India's top influencer marketing experts today and witness the
+                                                transformative power of genuine, effective influencer collaborations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="feature-img-contain">
+                                            <img src="imgs/hands.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="full-card-video">
+            <div class="d-flex justify-content-center">
+                <div class="custom-card-with-icon-h3">
+                    <h3>Why We Are the Best
+                        <strong>Influencer Marketing </strong>
+                        Platform in India
+                    </h3>
+                    <div class="custom-card-with-icon">
+                        <div class="custom-card-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/unmatched-network.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Unmatched Network:</h4>
+                                            <p>Grynow, the Best Influencer Marketing Platform in India, boasts an
+                                                unparalleled network of 300M+ social media influencers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/tailored-campaigns.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Tailored Campaigns:</h4>
+                                            <p>Brand’s vision is brought to life through customized influencer marketing
+                                                campaign, ensuring messages resonate with the audience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-card-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/quality-core.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Quality at Its Core:</h4>
+                                            <p>We prioritize delivering superior quality content, curated by the most
+                                                creative minds in the industry, to maintain our esteemed position.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/strategic-excellence.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Strategic Excellence:</h4>
+                                            <p>Our dedicated team crafts a comprehensive influencer marketing strategy,
+                                                guaranteeing campaign success from inception to execution.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-card-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/veteran-expertise.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Veteran Expertise:</h4>
+                                            <p>With over 8+ years of dedicated service, our expertise in orchestrating
+                                                impactful marketing campaigns is unrivaled.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/trusted-brands.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Trusted by the Brands:</h4>
+                                            <p>Over 1200+ leading brands place their trust in Grynow for dynamic and
+                                                result-oriented marketing solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-card-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/elite-leadership.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Elite Leadership:</h4>
+                                            <p>Our backbone is an incredible team of IIT, IIM, NIT, and ISB alumni,
+                                                guiding brands towards achieving prime positioning and branding.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="custom-card-with-iconbox d-flex justify-content-center">
+                                        <div class="custom-card-image">
+                                            <img src="imgs/data-driven-insights.webp" alt="">
+                                        </div>
+                                        <div class="custom-card-text">
+                                            <h4>Data-Driven Insights:</h4>
+                                            <p>Grynow stands at the forefront of transforming brands through data-driven
+                                                influencer marketing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="full-card-video">
+            <div class="d-flex justify-content-center">
+                <div class="influ-content-creator">
+                    <h3>YouTubers and Instagrammers Categories</h3>
+                    <div class="influ-content-creator-text">
+                        <span>Youtubers</span>
+                        <p>Instagrammers</p>
+                    </div>
+                    <div class="influ-card-tab-var">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-purple  influ-card-tab-var-size">
+
+                                    </div>
+                                    <p>Fashion Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-pink influ-card-tab-Beauty-size">
+
+                                    </div>
+                                    <p>
+                                        Beauty Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-green influ-card-tab-Finance-size">
+
+                                    </div>
+                                    <p>
+                                        Finance Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-green  influ-card-tab-Food-size">
+
+                                    </div>
+                                    <p>Food Youtubers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-green influ-card-tab-Gaming-size">
+
+                                    </div>
+                                    <p>Gaming Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-purple  influ-card-tab-FitnessHealth-size">
+
+                                    </div>
+                                    <p>
+
+                                        Fitness & Health Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img  bg-green  influ-card-tab-Comedy-size">
+
+                                    </div>
+                                    <p>
+                                        Comedy Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-purple  influ-card-tab-Travel-size">
+
+                                    </div>
+                                    <p>Travel Youtubers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-pink  influ-card-tab-Entertainment-size">
+                                    </div>
+                                    <p>Entertainment Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-pink influ-card-tab-Technology-size">
+                                    </div>
+                                    <p>
+
+                                        Technology Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-green influ-card-tab-Education-size">
+
+                                    </div>
+                                    <p>
+                                        Education Youtubers</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="influ-card-tab-var-col">
+                                    <div class="influ-card-tab-var-img bg-green  influ-card-tab-Automobile-size">
+
+                                    </div>
+                                    <p>
+                                        Automobile Youtubers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="banner-influencers-container">
+                            <a href="">Hire influencers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="full-card-video ">
+            <div class="influ-experts-card-main">
+                <div class="d-flex justify-content-center">
+                    <div class="influ-trophy">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="influ-trophy-img influ-trophy-img-size"></div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="influ-trophy-image influ-trophy-image-size"></div>
+                                <p class="influ-trophy-para"><strong>Grynow media won the economic times influencer
+                                        marketing award </strong>
+                                    in the small budget campaign category for the campaign “grynow x OnePlus Steven
+                                    Harrington smart-band”.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="full-card-video ">
+            <div class="d-flex justify-content-center">
+                <div class="influ-slider-imgs">
+                    <h3>Grynow in Media</h3>
+                    <img src="imgs/ht.webp" alt="">
+                    <img src="imgs/khaleej-times.webp" alt="">
+                    <img src="imgs/ht (1).webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="full-card-video">
+            <div class="d-flex justify-content-center">
+                <div class="influ-contactus-form-main">
+                    <div class="influ-contactus-form">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="influ-contactus">
+                                    <img src="imgs/rocket.png" alt="">
+                                    <h3>Want to boost your business through</h3>
+                                    <strong>influencer marketing?</strong>
+                                    <p>Being India's best influencer marketing agency, we leverage data-driven
+                                        methodologies and research to accomplish your goals. Skyrocket your business
+                                        today!</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="influ-contact">
+                                    <h3>Contact Us</h3>
+                                    <input type="text" placeholder="Brand Name">
+                                    <input type="text" placeholder="Website Mobile / App L">
+                                    <input type="text" placeholder="Phone Number">
+                                    <input type="text" placeholder="Email Address">
+                                    <textarea name="" id="">messages</textarea>
+                                    <div class="cheack-box-text">
+                                        <input type="checkbox">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function faqclick(val) {
+            console.log(val.parentElement.children[0].classList.toggle("faqs-h4-temp"));
+            console.log(val.parentElement.children[1].classList.toggle("faqs-para-show"));
+        }
+        function fullwidthfaq(data) {
+            console.log(data.parentElement.children[0].classList.toggle("full-width-faqs-update"));
+            console.log(data.parentElement.children[1].classList.toggle("full-width-faqs-para"));
+        }
+    </script>
+
+</body>
+
+</html>
